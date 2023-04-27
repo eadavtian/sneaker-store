@@ -1,0 +1,125 @@
+/* Checkout.module.css */
+.checkout {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.checkout h2 {
+  margin-bottom: 10px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.formGroup input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.formGroup select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.formRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.formRow > .formGroup {
+  flex-basis: calc(50% - 10px);
+}
+
+/* ваш код ... */
+
+.paymentMethods {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.paymentMethodsTitle {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.paymentMethod {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.paymentMethod input {
+  margin-right: 10px;
+}
+
+/* ваш код ... */
+
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buyButton {
+  width: 30%;
+  height: 55px;
+  background: #9dd558;
+  color: #ffffff;
+  border-radius: 18px;
+  border: 0;
+  margin-top: 2rem;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.1s ease-in-out;
+
+  &:disabled {
+    background-color: #bebebe !important;
+    cursor: pointer;
+  }
+
+  &:hover {
+    background: lighten(#9dd558, 5%);
+  }
+
+  &:active {
+    background: darken(#9dd558, 5%);
+  }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.headline {
+    p {
+    margin-bottom: 30px;
+    font-size: smaller;
+    font-style: italic;
+    color: rgb(211, 102, 78);
+    }
+
+}   

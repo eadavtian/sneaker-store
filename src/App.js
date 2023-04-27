@@ -1,15 +1,18 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Switch } from "react-router-dom";
 import axios from "axios";
 import Header from "./components/Header";
 import Drawer from "./components/Drawer";
 import AppContext from "./context";
 
 import Home from "./pages/Home";
+import ItemPage from "./pages/ItemPage";
 import Favorites from "./pages/Favorites";
 import Orders from "./pages/Orders";
 import Banner from "./components/Banner/Banner";
 import Footer from "./Footer/Footer";
+import Trends from "./components/Trends/Trends";
+import Checkout from "./components/Checkout/Checkout";
 
 function App() {
   const [items, setItems] = React.useState([]);
@@ -151,7 +154,7 @@ function App() {
             element={
               <div>
                 <Banner />
-
+                <Trends />
                 <Home
                   items={items}
                   cartItems={cartItems}
@@ -165,10 +168,11 @@ function App() {
               </div>
             }
           />
-
+          <Route path="/items/" element={<ItemPage />} />
           <Route path="favorites" element={<Favorites />} />
 
           <Route path="orders" element={<Orders />} />
+          <Route path="/checkout" element={<Checkout />} />
         </Routes>
       </div>
       <Footer />
