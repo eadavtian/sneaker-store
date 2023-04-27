@@ -289,3 +289,28 @@ header {
       }
     }
   }
+
+  .addToCartButton {
+  margin-top: 3rem;  
+  width: 20%;
+  height: 55px;
+  background: #34bf44;
+  color: #ffffff;
+  border-radius: 18px;
+  border: 0;
+  cursor: pointer;
+  transition: background 0.1s ease-in-out;
+
+  &:disabled {
+    background-color: #bebebe !important;
+    cursor: default;
+  }
+
+  &:hover {
+    background: lighten(#34bf44, 5%);
+  }
+
+  &:active {
+    background: darken(#34bf44, 5%);
+  }
+  }
