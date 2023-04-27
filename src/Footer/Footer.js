@@ -63,7 +63,7 @@ const Footer = () => {
         </div>
       </div>
       <div className={styles.copy}>
-        <p className="text-success">&copy; 2023 My Online Shop</p>
+        <p className="mb-0 text-success">&copy; 2023 My Online Shop</p>
       </div>
     </footer>
   );

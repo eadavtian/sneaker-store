@@ -1,6 +1,6 @@
 import React from "react";
 import ContentLoader from "react-content-loader";
-import { Link } from "react-router-dom";
+
 import AppContext from "../../context";
 
 import styles from "./Card.module.scss";
@@ -55,11 +55,8 @@ function Card({
               />
             </div>
           )}
-          <Link to={`/items/?id=${id}`}>
-            {/* <Link to={`/items/`}> */}
-            <img width="100%" height={135} src={imageUrl} alt="Sneakers" />
-            <h5>{title}</h5>
-          </Link>
+          <img width="100%" height={135} src={imageUrl} alt="Sneakers" />
+          <h5>{title}</h5>
           <div className="d-flex justify-between align-center">
             <div className="d-flex flex-column">
               <span>Цена:</span>
